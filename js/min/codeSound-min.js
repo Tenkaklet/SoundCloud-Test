@@ -1,0 +1,1 @@
+SC.initialize({client_id:"ce57e436973c465d7ed915b9f623d608"}),$(function(){SC.get("/tracks",{genres:"reggae"},function(e){$(e).each(function(e,i){var n="<strong> "+i.duration+"</strong>",t="<li>"+i.title+"</li>";$("#soundResults").append("<li>"+i.title+" - "+n+"</li>"),$("#world").append("<li>"+i.stream_url+"</li>"),$("#create").append(t),console.log(i)})})});
